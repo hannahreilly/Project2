@@ -7,6 +7,7 @@ import Image from './components/image';
 import axios from 'axios';
 import Footer from './components/footer';
 import Header from './components/header';
+import Nav from './components/nav';
 
 
 class App extends Component {
@@ -31,8 +32,7 @@ class App extends Component {
         bookInfo: newBook,
         title: newBook.title,
         author: newBook.author_name[0],
-        subject: newBook.subject[0]
-
+        subject: newBook.subject[0],
       })
       console.log(newBook);
     }
@@ -53,24 +53,36 @@ class App extends Component {
     })
   }
 
+  getBooks = async () => {
+    const bookTitle = await this.getBooks(this.state.title);
+    this.setState({
+      bookTitle: bookTitle
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <Header />
+        <Nav />
+       
         <Input 
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
+          getBooks={this.getBooks}
+          bookTitle={this.state.bookTitle}
         />
         {this.state.apiDataLoaded &&
           <Image
             data={this.state.bookData}
           />
         }
-        <h4>{this.state.newBook}</h4>
-        <h4>{this.state.title}</h4>
+        <div id="bookRes">
+          {/* <h2>{this.state.newBook}</h2>   */}
+        <h2>{this.state.title}</h2>
         <h4>{this.state.author}</h4>
         <h4>{this.state.subject}</h4>
-  
+        </div>
         <Footer />
       </div>
     );

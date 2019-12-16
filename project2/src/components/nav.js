@@ -6,13 +6,13 @@ function Nav() {
     <nav>
       <ul>
       <Link to="/">
-          <li>Home</li>
+        <li>Home</li>
         </Link>
         <Link to="/books">
         <li>Books</li>
         </Link>
         <Link to="/footer">
-        <li>footer</li>
+        <li>Footer</li>
         </Link>
         <Link to="/header">
         <li>Header</li>

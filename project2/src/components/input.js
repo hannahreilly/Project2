@@ -2,7 +2,7 @@ import React from 'react';
 function Input(props) {
   return (
     <form onSubmit={props.onSubmit}>
-      <h1>Books!</h1>
+      <h2>Search for a Book</h2>
       <input
         type="text"
         placeholder="Find A Book"

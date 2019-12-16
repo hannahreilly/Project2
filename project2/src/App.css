@@ -1,4 +1,6 @@
-
+html {
+  background-color: #C3DCE8;;
+}
 .App {
   text-align: center;
 }
@@ -10,25 +12,11 @@ form {
   align-content: center;
   justify-content: center;
   text-align: center;
-  background-color: #C3DCE8;
+  background-color: #257BF0;
   padding: 10px;
   margin: 10px;
 }
 
-textarea {
-  text-align: center;
-  font-family: 'Gupter', serif;
-  padding: 10px;
-  margin: 10px;
-}
-
-select{
-  text-align: center;
-  font-family: 'Gupter', serif;
-  padding: 10px;
-  margin: 10px;
-}
-/* hover effect is applied to the drop down menu */
 input:hover {
   background-color: #C3DCE8;
 }
@@ -39,6 +27,15 @@ input:hover {
   justify-content: center;
 }
 
+#bookRes {
+  display: grid;
+  grid-gap: 2px;
+  grid-auto-rows: 50px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
 input {
   padding: 10px;
   margin: 10px;
@@ -46,10 +43,10 @@ input {
   font-family: 'Girassol', cursive;
   font-size: 24px;
   text-align: center;
+  box-shadow: 4px 4px black;
 }
 
 .header {
-  background-color:#C3DCE8;
   width:100%;
   height: 40%;
 }
@@ -79,6 +76,12 @@ p {
   font-family: 'Girassol', cursive;
 }
 
+li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 15px;
+}
   @media only screen and (max-width: 600px) {
     body {
       background-color: #C3DCE8;
