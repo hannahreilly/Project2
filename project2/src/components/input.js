@@ -5,7 +5,7 @@ function Input(props) {
       <h1>Books!</h1>
       <input
         type="text"
-        placeholder="book title"
+        placeholder="book"
         onChange={props.onChange}
       />
       <input type="submit" />

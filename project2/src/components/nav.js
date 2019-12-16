@@ -1,12 +1,21 @@
 import React from 'react';
-function BookImg(props) {
-  const Img = "http://covers.openlibrary.org/b/isbn/0385472579-S.jpg" + props.data.data + ".jpg";
+import { Link } from 'react-router-dom';
+
+function Nav() {
   return (
-    <div>
-      <h1>Search Results {props.data.data}</h1>
-      {/* <p>Temperature: {props.data.data} </p> */}
-      <img src={Img} alt="book icon" />
-    </div>
+    <nav>
+    <ul>
+      <Link to="/">
+        <li>Home</li>
+      </Link>
+      <Link to="/about">
+        <li>About</li>
+      </Link>
+      </ul>
+      
+    </nav>
+    
   )
 }
-export default BookImg;
+
+export default Nav;

@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-//API Calls
 import { fetchData } from './services/books';
-//Custom components
 import Input from './components/input';
-import Nav from './components/nav';
+import Image from './components/image';
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-     bookData: {},
+      bookData: {},
       value: '',
       apiDataLoaded: false
     }
@@ -36,7 +35,7 @@ class App extends Component {
           onSubmit={this.handleSubmit}
         />
         {this.state.apiDataLoaded &&
-          <Nav
+          <Image
             data={this.state.bookData}
           />
         }
