@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+//API Calls
+import { fetchData } from './services/books';
+//Custom components
+import Input from './components/input';
+import Nav from './components/nav';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+     bookData: {},
+      value: '',
+      apiDataLoaded: false
+    }
+  }
+  handleChange = (e) => {
+    this.setState({
+      value: e.target.value
+    })
+  }
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = await fetchData(this.state.value);
+    this.setState({
+      bookData: data.data,
+      apiDataLoaded: true
+    })
+  }
+  render() {
+    return (
+      <div className="App">
+        <Input
+          onChange={this.handleChange}
+          onSubmit={this.handleSubmit}
+        />
+        {this.state.apiDataLoaded &&
+          <Nav
+            data={this.state.bookData}
+          />
+        }
+      </div>
+    );
+  }
 }
-
 export default App;

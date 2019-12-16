@@ -31,6 +31,7 @@ src
 
 ## API :
 https://openlibrary.org/api/books?bibkeys=ISBN:9780980200447&jscmd=data&format=json
+http://openlibrary.org/people/george08/lists.json
 
 ## Post-MVP
 Goals for post mvp are to implement a favorites feature or an add to cart button. I also want to include a trending books section.
