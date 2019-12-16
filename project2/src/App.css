@@ -1,11 +1,16 @@
+
+.App {
+  text-align: center;
+}
+
 form {
-  display:flex;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
   align-content: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
-  background-color: #ffff;
-  width: 400px;
+  background-color: #C3DCE8;
   padding: 10px;
   margin: 10px;
 }
@@ -24,53 +29,46 @@ select{
   margin: 10px;
 }
 /* hover effect is applied to the drop down menu */
-select:hover {
-  background-color: lightcoral;
+input:hover {
+  background-color: #C3DCE8;
 }
 
 #form-area {
   display: flex;
   align-content: center;
   justify-content: center;
-
-  
 }
 
 input {
   padding: 10px;
   margin: 10px;
-}
-
-
-
-body {
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-rows: 100px;
-  background-color: #E8D3D1;
-  align-content: center;
-  justify-content: center;
+  border-radius: 10px;
+  font-family: 'Girassol', cursive;
+  font-size: 24px;
   text-align: center;
 }
 
+.header {
+  background-color:#C3DCE8;
+  width:100%;
+  height: 40%;
+}
 h1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  font-family: 'Gupter', serif;
+  font-family: 'Girassol', cursive;
 }
 
 h2 {
-  font-family: 'Gupter', serif;
+  font-family: 'Girassol', cursive;
 }
 
-img{
+h4 {
+  font-family: 'Girassol', cursive;
+}
+
+img {
   width: 400px;
   height: 350px;
-  
-  /* display: grid;
-  grid-template-columns: 60px 60px; */
 }
 
 p {
@@ -78,20 +76,11 @@ p {
   justify-content: center;
   text-align: center;
   width: 400px;
-  font-family: 'Gupter', serif;
+  font-family: 'Girassol', cursive;
 }
-
-
-#cat-display {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  align-content: center;
-
-  }
 
   @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+      background-color: #C3DCE8;
     }
   }

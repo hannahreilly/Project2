@@ -4,17 +4,21 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <nav>
-    <ul>
+      <ul>
       <Link to="/">
-        <li>Home</li>
-      </Link>
-      <Link to="/about">
-        <li>About</li>
-      </Link>
+          <li>Home</li>
+        </Link>
+        <Link to="/books">
+        <li>Books</li>
+        </Link>
+        <Link to="/footer">
+        <li>footer</li>
+        </Link>
+        <Link to="/header">
+        <li>Header</li>
+        </Link>
       </ul>
-      
     </nav>
-    
   )
 }
 
