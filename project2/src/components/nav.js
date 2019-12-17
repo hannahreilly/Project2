@@ -11,11 +11,8 @@ function Nav() {
         <Link to="/books">
         <li>Books</li>
         </Link>
-        <Link to="/footer">
-        <li>Footer</li>
-        </Link>
-        <Link to="/header">
-        <li>Header</li>
+        <Link to="/popular">
+        <li>Popular</li>
         </Link>
       </ul>
     </nav>
