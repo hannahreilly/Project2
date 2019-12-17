@@ -1,4 +1,5 @@
 import React from 'react';
+
 function Input(props) {
   return (
     <form onSubmit={props.onSubmit}>
@@ -9,7 +10,7 @@ function Input(props) {
         onChange={props.onChange}
       />
       <input type="submit" />
-    </form>
+      </form>
   )
 }
 export default Input;

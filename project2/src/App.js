@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { fetchData } from './services/books';
 import Input from './components/input';
-import Image from './components/image';
+import Img from './components/image';
 // import axios from 'axios';
 import Footer from './components/footer';
 import Header from './components/header';
 import Nav from './components/nav';
 import Book from './components/Book';
+import Popular from './components/popular';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
     this.state = {
       books: [],
       value: "",
+      number: 0,
       bookInfo: [],
       title: "",
       author: "",
@@ -25,18 +27,21 @@ class App extends Component {
     }
   }
 
-  componentDidMount = async () => {
-    // for (let i = 0; i < this.state.books.length; i++) {
-    //   let data = await axios.get(`http://openlibrary.org/search.json?q=${Input}`)
-    //   let newBook = data.data.docs;
-    //   this.setState({
-    //     bookInfo: newBook,
-    //     title: newBook.title,
-    //     author: newBook.author_name,
-    //     subject: newBook.subject,
-    //   })
-    //   console.log(newBook);
-    // }
+  onDecClick = (e) => {
+    e.preventDefault();
+    const number = this.state.number - 1;
+    if (this.state.number > 0) {
+      this.setState({
+        number
+      })
+    }
+  }
+  onIncClick = (e) => {
+    e.preventDefault();
+    const number = this.state.number + 1;
+    this.setState({
+       number
+    })
   }
 
   handleChange = (e) => {
@@ -53,49 +58,47 @@ class App extends Component {
         return book;
       }
     })
-    const selectedBooks = books.splice(0, 3)
+
+
+    const selectedBooks = books.splice(0, 6)
     console.log(selectedBooks)
     this.setState(state => ({
-      books: [...selectedBooks,...state.books],
+      books: [...selectedBooks, ...state.books],
       apiDataLoaded: true
     }))
   }
-  // getBooks = async () => {
-  //   const bookTitle = await this.getBooks(this.state.title);
-  //   this.setState({
-  //     bookTitle: bookTitle
-  //   })
-  // }
+
   renderBooks = () => {
     if (this.state.books.length) {
-      return this.state.books.map((book,index) => (
+      return this.state.books.map((book, index) => (
+    
         <Book
           key={index}
           book={book}
         />
+  
+        
       ))
     }
   }
+
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header/>
+          <span className="cart">{this.state.number}</span>
         <Nav />
+        <Route exact path ="/" />
+        <Route path="/popular" component={Popular} />
         <Input
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
-          // getBooks={this.getBooks}
-          bookTitle={this.state.bookTitle}
         />
-        {/* {this.state.apiDataLoaded &&
-          <Image
-            data={this.state.bookData}
-          />
-        } */}
+        <Img />
         <div id="bookRes">
           {this.renderBooks()}
-
         </div>
+        
         <Footer />
       </div>
     );

@@ -1,12 +1,8 @@
 import React from 'react';
 function BookImg(props) {
-  const Img = "https://openlibrary.org/api/books?bibkeys=ISBN:0385472579,LCCN:62019420&format=json" + props.data.data + ".jpg";
+  const Img = (`http://covers.openlibrary.org/b/id/240727-S.jpg`);
   return (
-    <div>
-      <h1>Search Results {props.data.docs.title}</h1>
-      <p> Title: {props.data.title} </p>
-      <img src={Img} alt="book icon" />
-    </div>
+      <img src={'Img'} alt="book icon" />
   )
 }
 export default BookImg;
