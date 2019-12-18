@@ -168,3 +168,10 @@ span {
   color: #3B252C;
   background-color: #CDCDCD;
 }
+
+.logo {
+  width: 350px;
+  height: 150px;
+  float: left;
+  margin: 0 auto;
+}
