@@ -86,6 +86,7 @@ h1 {
   font-size: 40px;
   margin: 0px;
   padding: 0px 85% 0px 0px ;
+  
 }
 
 h2 {
@@ -100,6 +101,7 @@ h3 {
   font-size: 35px;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 8px;
+  transition: 1s;
 }
 
 h4 {
@@ -118,13 +120,19 @@ p {
   text-align: center;
   width: 400px;
   font-family: 'Girassol', cursive;
+  
+  
+}
+
+h3:hover {
+  letter-spacing: 7px;
 }
 
 ul {
   background-color: #CDCDCD;;
-  height: 15%;
+  /* height: 15%;
   margin: 0 auto;
-  padding: 5px;
+  padding: 5px; */
   text-decoration: none;
 }
 
@@ -173,5 +181,5 @@ span {
   width: 350px;
   height: 150px;
   float: left;
-  margin: 0 auto;
+  padding: 0px;
 }
