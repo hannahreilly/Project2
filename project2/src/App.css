@@ -68,7 +68,7 @@ input {
 
 .header {
   width:100%;
-  background-color: #CDCDCD;
+  /* background-color: #CDCDCD; */
 }
 
 .footer {
@@ -158,6 +158,7 @@ a {
 li:hover {
   background-color: #F24333;
 }
+
   @media only screen and (max-width: 600px) {
     body {
       background-color: #CDCDCD;
@@ -185,20 +186,22 @@ span {
 }
 
 img {
-  width: 50px;
-  height: 100px;
+  width: 100px;
+  height: 150px;
 }
 
 .Popular {
-  display: inline-block
+  display: grid;
+  color: #444;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 .popularp {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: baseline;
-  text-align: center;
-  /* flex-wrap:wrap; */
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 15px;
+  background-color: #fff;
+  color: #444;
   width: 100%;
 }
