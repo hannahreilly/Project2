@@ -163,8 +163,8 @@ span {
 }
 
 .cart {
-  padding: 5px;
-  margin: 0px 0px 400px 0px;
+  text-align: right;
+  float: right;
   color: #3B252C;
   background-color: #CDCDCD;
 }

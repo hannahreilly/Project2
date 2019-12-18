@@ -86,7 +86,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-          <span className="cart">{this.state.number}</span>
+          <span className="cart">Cart {this.state.number} </span>
         <Nav />
         <Route exact path ="/" />
         <Route path="/popular" component={Popular} />
@@ -95,8 +95,12 @@ class App extends Component {
           onSubmit={this.handleSubmit}
         />
         <Img />
+
         <div id="bookRes">
           {this.renderBooks()}
+          <button onClick={this.onIncClick}>
+            Add to Cart
+          </button>
         </div>
         
         <Footer />
