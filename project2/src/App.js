@@ -101,7 +101,9 @@ class App extends Component {
           {this.renderBooks()}
   
         </div>
-
+        <button onClick={this.onIncClick}>
+            Add to Cart
+          </button>
         <Footer />
       </div>
     );

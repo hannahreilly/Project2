@@ -183,3 +183,12 @@ span {
   float: left;
   padding: 0px;
 }
+
+img {
+  width: 50px;
+  height: 100px;
+}
+
+.popularp {
+  display: inline-grid;
+}
