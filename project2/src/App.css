@@ -189,6 +189,16 @@ img {
   height: 100px;
 }
 
+.Popular {
+  display: inline-block
+}
 .popularp {
-  display: inline-grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: baseline;
+  text-align: center;
+  /* flex-wrap:wrap; */
+  justify-content: center;
+  width: 100%;
 }

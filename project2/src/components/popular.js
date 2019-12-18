@@ -4,7 +4,7 @@ const Popular = () => (
   <div className="Popular">
     <h1>Trending Books</h1>
     <p className="popularp">
-      <h4> The Cactus </h4>
+      <h4> The Cactus </h4> 
       <img src="https://images-na.ssl-images-amazon.com/images/I/51L84KhfxPL.jpg" alt="the cactus"></img>
       <h4> The Whisper Network</h4>
       <img src="https://images-na.ssl-images-amazon.com/images/I/81JfVPowVmL.jpg" alt="the whisper network"></img>
