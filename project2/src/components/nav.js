@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
+    <div>
     <header>
-      <img className="logo" src="https://i.imgur.com/dtpzfez.png" alt="logo"/>
+      <img className="logo" src="https://i.imgur.com/SoCLnGl.png" alt="logo" />
+    </header>
+    <div className="Nav">
       <ul>
       <Link to="/about">
         <li>About</li>
@@ -15,10 +18,9 @@ function Nav() {
       <Link to="/">
         <li>Home</li>
         </Link>
- 
-
       </ul>
-      </header>
+      </div>
+      </div>
   )
 }
 
