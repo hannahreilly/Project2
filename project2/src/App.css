@@ -37,6 +37,8 @@ input:hover {
   /* background-color: #fff; */
   color: #5BC0BE;
   width: 100%;
+  margin:5%;
+  padding: 5px;
 }
 
 #bookDetails {
@@ -46,8 +48,8 @@ input:hover {
   text-align: center;
   border-radius: 15px;
   width: 90%;
-  padding: 5px;
-  margin: 10px 10px;
+  padding: 10px;
+  margin: 5px;
   color: #CDCDCD;
   background-color: #444;
 }
@@ -73,12 +75,6 @@ input {
   box-shadow: 4px 4px black;
 
 }
-
-/* .header {
-  width:100%;
-  height: 15%;
-  background-color: white;
-} */
 
 header {
   width:100%;
@@ -232,5 +228,7 @@ img {
   background-color: #fff;
   color: #444;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
