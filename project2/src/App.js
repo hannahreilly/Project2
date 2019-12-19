@@ -3,7 +3,7 @@ import './App.css';
 import { Route } from 'react-router-dom';
 import { fetchData } from './services/books';
 import Input from './components/input';
-import Img from './components/image';
+// import Img from './components/image';
 // import axios from 'axios';
 import Footer from './components/footer';
 import Header from './components/header';
@@ -60,7 +60,7 @@ class App extends Component {
     })
 
 
-    const selectedBooks = books.splice(0, 6)
+    const selectedBooks = books.splice(0, 12)
     console.log(selectedBooks)
     this.setState(state => ({
       books: [...selectedBooks, ...state.books],
@@ -71,13 +71,15 @@ class App extends Component {
   renderBooks = () => {
     if (this.state.books.length) {
       return this.state.books.map((book, index) => (
-    
+    <div>
         <Book
           key={index}
           book={book}
         />
-  
-        
+      <button onClick={this.onIncClick}>
+        Add to Cart
+      </button> 
+      </div>
       ))
     }
   }
@@ -86,8 +88,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-       
-          <span className="cart">Cart {this.state.number} </span>
+        <br></br>
+        <span className="cart">Cart {this.state.number} </span>
         <Nav />
         <Route exact path ="/" />
         <Route path="/popular" component={Popular} />
@@ -95,15 +97,13 @@ class App extends Component {
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
         />
-        <Img />
+        {/* <Img /> */}
 
         <div id="bookRes">
           {this.renderBooks()}
-  
+
         </div>
-        <button onClick={this.onIncClick}>
-            Add to Cart
-          </button>
+
         <Footer />
       </div>
     );

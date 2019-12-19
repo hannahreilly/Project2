@@ -1,5 +1,5 @@
 html {
-  background-color: #3B252C;
+  background-color: #1C2541;
   height:1000px
 }
 .App {
@@ -26,33 +26,41 @@ form {
 }
 
 input:hover {
-  background-color: #F24333;
+  background-color: #5BC0BE;
 }
 
 
 #bookRes {
   display: grid;
-  grid-column-start: 3;
-  grid-column-end: five;
-  grid-row-start: row1-start;
-  grid-row-end: 3;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 20px;
+  /* background-color: #fff; */
+  color: #5BC0BE;
+  width: 100%;
 }
 
 #bookDetails {
   display: grid;
   grid-auto-flow: row;
-  grid-row-start: 4;
-  grid-row-end: five;
   grid-gap: 0;
   text-align: center;
-  border: 3px solid #CDCDCD;
   border-radius: 15px;
   width: 90%;
   padding: 5px;
   margin: 10px 10px;
   color: #CDCDCD;
-  background-color: #564D4A;
-  
+  background-color: #444;
+}
+
+button {
+  background-color: #444;
+  color: #CDCDCD;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+button:hover {
+  letter-spacing: 4px;
 }
 
 input {
@@ -66,10 +74,21 @@ input {
 
 }
 
-.header {
+/* .header {
   width:100%;
-  /* background-color: #CDCDCD; */
+  height: 15%;
+  background-color: white;
+} */
+
+header {
+  width:100%;
+  height: 17%;
+  background-color: white;
+  padding: 10px;
+  /* margin: 10px; */
 }
+
+
 
 .footer {
   height: 50px;
@@ -85,23 +104,22 @@ h1 {
   background-color: #CDCDCD;;
   font-size: 40px;
   margin: 0px;
-  padding: 0px 85% 0px 0px ;
-  
+  padding: 0px 0px 0px 0px;
 }
 
 h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #CDCDCD;;
+  color: #CDCDCD;
   font-size: 34px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
   margin: 8px;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 8px;
-  transition: 1s;
+
 }
 
 h4 {
@@ -120,46 +138,54 @@ p {
   text-align: center;
   width: 400px;
   font-family: 'Girassol', cursive;
-  
-  
-}
-
-h3:hover {
-  letter-spacing: 7px;
+  margin: 0px;
+  padding: 5px;
 }
 
 ul {
-  background-color: #CDCDCD;;
+  background-color: white;
   /* height: 15%;
-  margin: 0 auto;
+  margin: 10px;
   padding: 5px; */
   text-decoration: none;
 }
 
 a {
   text-decoration: none;
-  color: #3B252C;
-  display: inline;
+  color: #1C2541;
   list-style-type: none;
   text-decoration: none;
-  padding: 15px;
-  margin: 5px;
   font-family: 'Roboto Condensed', sans-serif;
-  align-items: flex-end;
+
 }
 
  li {
   display: block;
-  margin: 0px;
-  padding: 0px 0px 0px 0px ;
-  width:150px;
+  margin: 90px 5px 0px 20px;
+  padding: 15px;
+  font-size: 18px;
+  width:10%;
+  border-radius: 10px;
+  border: 2px solid #5BC0BE;
+  text-align: center;
+  float: right;
  }
 
 li:hover {
-  background-color: #F24333;
+  background-color: #5BC0BE;
 }
 
   @media only screen and (max-width: 600px) {
+    body {
+      background-color: #CDCDCD;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
     body {
       background-color: #CDCDCD;
     }
@@ -175,7 +201,8 @@ span {
   text-align: right;
   float: right;
   color: #3B252C;
-  background-color: #CDCDCD;
+  background-color: white;
+  width: 100%;
 }
 
 .logo {
@@ -196,12 +223,14 @@ img {
   width: 100%;
   text-align: center;
   justify-content: center;
+  margin: 20px;
 }
 .popularp {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-gap: 15px;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 20px;
   background-color: #fff;
   color: #444;
   width: 100%;
 }
+
