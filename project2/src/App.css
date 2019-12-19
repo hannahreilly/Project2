@@ -88,7 +88,7 @@ header {
 
 .footer {
   height: 50px;
-  margin-top: 1000px;
+  margin-top: 80%;
   width: 100%;
   color: #CDCDCD;;
   text-align: center;
@@ -121,6 +121,13 @@ h3 {
 h4 {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 8px;
+}
+
+h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 8px;
+  font-size: 15px;
+  color: #CDCDCD;
 }
 
 /* img {

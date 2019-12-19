@@ -10,6 +10,7 @@ import Header from './components/header';
 import Nav from './components/nav';
 import Book from './components/Book';
 import Popular from './components/popular';
+import About from './components/about';
 
 
 class App extends Component {
@@ -92,14 +93,13 @@ class App extends Component {
         <span className="cart">Cart {this.state.number} </span>
         <Nav />
         <Route exact path ="/" />
-        <Route path="/popular" component={Popular} />
+        <Route exact path="/popular" component={Popular} />
+        <Route exact path="/about" component={About}/>
         <Input
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
         />
-        {/* <Img /> */}
-
-        <div id="bookRes">
+          <div id="bookRes">
           {this.renderBooks()}
 
         </div>
