@@ -11,7 +11,6 @@ const Book = (props) => (
     <h4>{props.book.publisher[0]}</h4>
     <h4>First Publish Year<br></br> </h4>
     <h4>{props.book.first_publish_year}</h4>
-    <a href="http://openlibrary.org/search.json?q=${input}"> click </a>
     
   </div>
 )
