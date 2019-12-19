@@ -12,7 +12,7 @@ function Nav() {
         <Link to="/popular">
         <li>Popular</li>
         </Link>
-      <Link to="/home">
+      <Link to="/">
         <li>Home</li>
         </Link>
  

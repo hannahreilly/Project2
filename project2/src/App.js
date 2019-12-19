@@ -42,7 +42,7 @@ class App extends Component {
     e.preventDefault();
     const number = this.state.number + 1;
     this.setState({
-       number
+      number
     })
   }
 
@@ -73,15 +73,15 @@ class App extends Component {
   renderBooks = () => {
     if (this.state.books.length) {
       return this.state.books.map((book, index) => (
-    <div>
-        <Book
-          key={index}
-          book={book}
-        />
-      <button onClick={this.onIncClick}>
-        Add to Cart
-      </button> 
-      </div>
+        <div>
+          <Book
+            key={index}
+            book={book}
+          />
+          <button onClick={this.onIncClick}>
+            Add to Cart
+      </button>
+        </div>
       ))
     }
   }
@@ -93,17 +93,18 @@ class App extends Component {
         <br></br>
         <span className="cart">Cart {this.state.number} </span>
         <Nav />
-        <Route exact path ="/" />
+        <Route exact path="/" render={(props) =>
+          <Input
+            onChange={this.handleChange}
+            onSubmit={this.handleSubmit}
+            renderBooks={this.renderBooks}
+          />} />
         <Route exact path="/popular" component={Popular} />
-        <Route exact path="/about" component={About}/>
-        <Input
-          onChange={this.handleChange}
-          onSubmit={this.handleSubmit}
-        />
-          <div id="bookRes">
+        <Route exact path="/about" component={About} />
+        {/* 
+        <div id="bookRes">
           {this.renderBooks()}
-
-        </div>
+        </div> */}
 
         <Footer />
       </div>
