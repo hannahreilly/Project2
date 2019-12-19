@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
 import { fetchData } from './services/books';
-// import { fetchData1 } from './services/books';
+// import { imageData } from './services/books';
 import Input from './components/input';
 // import Img from './components/image';
 // import axios from 'axios';
@@ -86,9 +86,14 @@ class App extends Component {
     }
   }
 
+
+
+  
+
   render() {
     return (
       <div className="App">
+
         <Header />
         <br></br>
         <span className="cart">Cart {this.state.number} </span>

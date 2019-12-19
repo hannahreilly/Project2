@@ -4,7 +4,7 @@ export const fetchData = async (input) => {
   return data;
 }
 
-// export const fetchData1 = async (input) => {
-//   const data1 = await axios.get(`http://covers.openlibrary.org/b/olid/OL7440033M-S.jpg`)
-//   return data1;
+// export const imageData = async (input) => {
+//   const imageData = await axios.get(`https://openlibrary.org/api/books?bibkeys=ISBN:0385472579,LCCN:62019420&format=json`)
+//   return imageData;
 // }

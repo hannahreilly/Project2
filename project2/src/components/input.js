@@ -3,6 +3,7 @@ import React from 'react';
 function Input(props) {
   return (
     <div>
+      <div className="border"></div>
       <form onSubmit={props.onSubmit}>
         <h2>Search for a Book</h2>
         <input

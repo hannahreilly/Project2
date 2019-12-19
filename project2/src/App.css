@@ -245,3 +245,13 @@ img {
   padding: 0px;
 }
 
+.border {
+  background-image: url('https://i.imgur.com/Ulh2Twp.png');
+  height: 510px;
+  width: 100%;
+  position:static;
+  top: 5%;
+  padding: 0px;
+  margin: -100px 0px 0px 0px;
+
+}
