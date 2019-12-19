@@ -5,7 +5,6 @@ function Nav() {
   return (
     <div>
     <header>
-      <img className="logo" src="https://i.imgur.com/OfqsXoa.png" alt="logo" />
     </header>
     <div className="Nav">
         <ul>
