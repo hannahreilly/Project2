@@ -15,7 +15,9 @@ function Input(props) {
       <div id="bookRes">
         {props.renderBooks()}
       </div>
-      <div className="border"></div>
+      <div className="border">
+        <img className="bookImg" src="https://i.imgur.com/Ulh2Twp.png" alt="beautiful" />
+      </div>
     </div>
   )
 }

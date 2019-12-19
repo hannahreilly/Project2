@@ -8,16 +8,18 @@ function Nav() {
       <img className="logo" src="https://i.imgur.com/OfqsXoa.png" alt="logo" />
     </header>
     <div className="Nav">
-      <ul>
-      <Link to="/about">
-        <li>About</li>
-        </Link>
-        <Link to="/popular">
+        <ul>
+        <Link to="/">
+        <li>Home</li>
+          </Link>
+          <Link to="/popular">
         <li>Popular</li>
         </Link>
-      <Link to="/">
-        <li>Home</li>
+        <Link to="/about">
+        <li>About</li>
         </Link>
+
+
       </ul>
       </div>
       </div>

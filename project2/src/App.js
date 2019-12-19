@@ -95,6 +95,7 @@ class App extends Component {
       <div className="App">
 
         <Header />
+        
         <br></br>
         <span className="cart">Cart {this.state.number} </span>
         <Nav />
