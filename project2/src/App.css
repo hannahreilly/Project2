@@ -56,8 +56,8 @@ input:hover {
   grid-gap: 20px;
   color: #5BC0BE;
   width: 100%;
-  margin:5%;
-  padding: 5px;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 #bookDetails {
