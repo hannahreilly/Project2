@@ -149,6 +149,11 @@ h5 {
   color: #CDCDCD;
 }
 
+h6 {
+  color: white;
+  font-size: 20px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -257,7 +262,6 @@ img{
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-
 }
 .popularp {
   display: grid;
