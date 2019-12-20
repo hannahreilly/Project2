@@ -139,7 +139,8 @@ h4 {
 
 h5 {
   font-family: 'Roboto Condensed', sans-serif;
-  margin: 8px;
+  padding: 0 auto;
+  margin: 20px 0px 0px 0px;
   font-size: 15px;
   color: #CDCDCD;
 }
@@ -271,4 +272,11 @@ img{
   top: 50%;
   padding: 0px;
   margin: 0px 0px 0px 0px;
+}
+
+.profilePic {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 auto;
+  border-radius: 5px solid black;
 }

@@ -2,8 +2,9 @@ import React from 'react';
 
 function About(props){
 return (
-  <div className="about">
-    <h5> About </h5>
+  <div className="about" >
+    <h5> Who we are</h5> <br></br>
+    <img className="profilePic" src="https://junkee.com/wp-content/uploads/2014/06/ellenselfie.jpg" alt="celebs"></img>
     <h5>Barnes & Noble is the world’s largest bookseller and a leading retailer of content, digital media and educational products. The Company operates 627 Barnes & Noble bookstores in 50 states, 
       and one of the Web’s premier e-commerce sites, BN.com. Our Nook Digital business offers a lineup of popular NOOK® tablets and e-Readers and an expansive collection of digital reading content through the NOOK Store®. 
       Barnes & Noble’s mission is to operate the best omni-channel specialty retail business in America, helping both our customers and booksellers reach their aspirations, while being a credit to the communities we serve.
