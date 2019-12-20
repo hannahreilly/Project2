@@ -87,8 +87,9 @@ button:hover {
 }
 
 input {
-  padding: 10px;
+  padding: auto 0;
   margin: 10px;
+  width: 15vw;
   border-radius: 10px;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 24px;
@@ -236,8 +237,9 @@ li:hover {
 
 .bookImg {
   width: 100vw;
+  height: 30vw;
   padding: 0 auto;
-  margin: -45px auto;
+  margin: 0 auto;
 }
 
 img{
@@ -271,9 +273,9 @@ img{
   height: 500px;
   width: 100%;
   position:static;
-  top: 50%;
+  top: 30%;
   padding: 0px;
-  margin: 0px 0px 0px 0px;
+  margin: -30px 0px 0px 0px;
 }
 
 .profilePic {
