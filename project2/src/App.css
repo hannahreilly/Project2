@@ -52,10 +52,12 @@ input:hover {
 
 #bookRes {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
-  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /* grid-template-columns: 350px 350px 350px; */
+  grid-gap: 20px;
   color: #5BC0BE;
-  width: 120vw;
+  width: 100vw;
   margin: 0 auto;
   padding: 0 auto;
 }
