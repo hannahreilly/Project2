@@ -5,7 +5,7 @@ and (orientation : portrait) {
 
 }
 
-@media screen 
+@media only screen 
   and (min-width: 1200px) 
   and (max-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2)
@@ -13,9 +13,9 @@ and (orientation : portrait) {
 }
 
 @media only screen 
-  and (min-width: 375px) 
-  and (max-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 }
 
@@ -90,9 +90,10 @@ input {
   padding: auto 0;
   margin: 10px;
   width: 15vw;
+  /* height: 6vw; */
   border-radius: 10px;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 24px;
+  font-size: 2vw;
   color: #444;
   text-align: center;
   box-shadow: 4px 4px black;
